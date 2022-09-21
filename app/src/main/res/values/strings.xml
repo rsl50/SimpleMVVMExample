@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">SimpleMVVMExample</string>
+  <string name="fragment_txtview_hello">Hello, I\'m a fragment!</string>
+  <string name="fragment_btn_update">Update text</string>
 </resources>
