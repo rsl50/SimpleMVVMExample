@@ -31,6 +31,7 @@ class MainFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setupClickListeners()
         fragmentTextUpdateObserver()
     }
 
@@ -42,6 +43,11 @@ class MainFragment: Fragment() {
         viewModel.uiTextLiveData.observe(viewLifecycleOwner, Observer { updatedText ->
             binding.fragmentTextView.text = updatedText
         })
+    }
+
+    // Setup the button in our fragment to call getUpdatedText method in viewModel
+    private fun setupClickListeners() {
+        binding.fragmentButton.setOnClickListener { viewModel.getUpdatedText() }
     }
 
     override fun onDestroyView() {
