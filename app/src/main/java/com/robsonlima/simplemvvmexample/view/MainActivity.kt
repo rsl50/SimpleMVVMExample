@@ -9,7 +9,7 @@ import com.robsonlima.simplemvvmexample.R
 /**
  * Opens the fragment with the UI
  */
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
