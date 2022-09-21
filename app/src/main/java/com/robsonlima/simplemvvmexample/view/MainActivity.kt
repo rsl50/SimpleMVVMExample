@@ -1,7 +1,8 @@
-package com.robsonlima.simplemvvmexample
+package com.robsonlima.simplemvvmexample.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.robsonlima.simplemvvmexample.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
